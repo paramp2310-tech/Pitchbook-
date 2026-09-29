@@ -154,9 +154,9 @@ function opts(list,sel,ph){return'<option value="">'+ph+'</option>'+list.map(n=>
 function setup(){
   const d=n=>Array.from({length:11},(_,i)=>n+' '+(i+1)).join('\n');
   return`<div class="card"><h2>New match</h2>
-  <div class="grid3"><div><label for="t0">Team 1</label><input id="t0" value="Team A"></div><div><label for="t1">Team 2</label><input id="t1" value="Team B"></div>
+  <div class="grid3"><div><label for="t0">Team A</label><input id="t0" value="Team A"></div><div><label for="t1">Team B</label><input id="t1" value="Team B"></div>
   <div><label for="ov">Overs per innings</label><input id="ov" type="number" min="1" value="20"></div>
-  <div><label for="first">Batting first</label><select id="first"><option value="0">Team 1</option><option value="1">Team 2</option></select></div></div>
+  <div><label for="first">Batting first</label><select id="first"><option value="0">Team A</option><option value="1">Team B</option></select></div></div>
   <div class="grid3" style="margin-top:10px"><div><label for="p0">Team 1 players (one per line)</label><textarea id="p0" rows="11">${d('A Player')}</textarea></div>
   <div><label for="p1">Team 2 players (one per line)</label><textarea id="p1" rows="11">${d('B Player')}</textarea></div></div>
   <p><button class="on" onclick="start()">Start match</button></p></div>`;
